@@ -1,0 +1,12 @@
+{{#each data}}
+  <p>
+    {{this.name}}
+  </p>
+  {{!--  {{#each this.images}}
+    <img src='{{this.url.0}}' alt='' />
+  {{/each}} --}}
+  <img src='{{this.images.0.url}}' alt='' />
+
+  <button>Search Albums</button>
+
+{{/each}}
