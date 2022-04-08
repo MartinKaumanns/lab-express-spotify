@@ -1,0 +1,29 @@
+<ul>
+  {{#each albums}}
+    <li>
+      {{#if images.length}}
+        <img src='{{images.0.url}}' alt='{{name}}' />
+      {{/if}}
+      <h5>{{name}}</h5>
+    </li>
+    <a href='/album/{{id}}'>View Tracks</a>
+  {{/each}}
+</ul>
+
+{{!-- <div class='artist-card'>
+  <div>
+
+    {{#each data}}
+      <img src='{{this.images.0.url}}' alt='' class='artist-card-img' />
+      <h5>
+        {{name}}
+      </h5>
+      {{!--  {{#each this.images}}
+    <img src='{{this.url.0}}' alt='' />
+  {{/each}} 
+
+      {{! <button class='search-albums'>Search Albums</button> }}
+      <a href='/albums/{{id}}' class='search-albums'>View Album</a>
+    {{/each}}
+  </div>
+</div> --}}

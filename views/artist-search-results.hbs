@@ -1,12 +1,33 @@
-{{#each data}}
-  <p>
-    {{this.name}}
-  </p>
-  {{!--  {{#each this.images}}
+<ul>
+  {{#each artists}}
+    <li>
+      {{#if images.length}}
+        <img src='{{images.0.url}}' alt='{{name}}' class='artist-card-img' />
+      {{/if}}
+      <h4>{{name}}</h4>
+      <a href='/albums/{{id}}' class=''>View Albums</a>
+    </li>
+  {{/each}}
+</ul>
+
+{{! /// alternative }}
+{{!-- 
+<ul>
+    {{#each data}}
+  <li>
+{{#if images.length}}
+    <img src='{{this.images.0.url}}' alt='' class='artist-card-img' />
+    {{/if}}
+    <h5>
+      {{this.name}}
+    </h5>
+    {{!--  {{#each this.images}}
     <img src='{{this.url.0}}' alt='' />
-  {{/each}} --}}
-  <img src='{{this.images.0.url}}' alt='' />
+  {{/each}}
 
-  <button>Search Albums</button>
+     <button class='search-albums'>Search Albums</button>
 
-{{/each}}
+    <a href='/albums/{{id}}' class='search-albums'>View Albums</a>
+  {{/each}}
+  </li>
+</ul> --}}

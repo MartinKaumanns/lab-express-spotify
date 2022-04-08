@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+h5 {
+  text-align: center;
+  color: rgb(36, 35, 35);
+}
+
+.artist-card {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  background-color: rgb(110, 110, 110);
+  flex-wrap: wrap;
+}
+
+.single-card {
+  flex-grow: 1;
+  width: 30%;
+  flex-wrap: wrap;
+}
+
+.search-albums {
+  background-color: rgb(202, 69, 69);
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 120px;
+  height: 40px;
+  color: white;
+  border-radius: 8px;
+  border: none;
+}
+
+.artist-card-img {
+  width: 240px;
+}
